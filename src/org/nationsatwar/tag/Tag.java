@@ -20,7 +20,7 @@ public final class Tag extends JavaPlugin {
 	 */
 	public void onEnable() {
     	
-    	log("Tag has been enabled...");
+    	log("Tag has been enabled.");
 	}
 
 	/**
