@@ -3,8 +3,7 @@ package org.nationsatwar.tag;
 import java.util.logging.Logger;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.nationsatwar.tag.Events.PolearmEvents;
-import org.nationsatwar.tag.Events.TwoHandedEvents;
+import org.nationsatwar.tag.Events.AttackEvents;
 
 /**
  * The Tag parent class.
@@ -23,8 +22,7 @@ public final class Tag extends JavaPlugin {
 	public void onEnable() {
 		
     	// Register Events
-		getServer().getPluginManager().registerEvents(new PolearmEvents(this), this);
-		getServer().getPluginManager().registerEvents(new TwoHandedEvents(this), this);
+		getServer().getPluginManager().registerEvents(new AttackEvents(this), this);
     	
     	log("Tag has been enabled.");
 	}

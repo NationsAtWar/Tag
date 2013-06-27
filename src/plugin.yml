@@ -1,6 +1,7 @@
 name: Tag
-main: org.nationsatwar.tag.Tag
 version: 1.0
+main: org.nationsatwar.tag.Tag
+softdepend: [ToyChest]
 
 commands:
   tag:

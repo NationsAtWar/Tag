@@ -132,8 +132,7 @@ public class Utility {
 					checkVector.add(direction);
 					attackHitbox.d(direction.getX(), direction.getY(), direction.getZ());
 					
-					if (checkVector.distance(entityVector) > distance || 
-							!checkVector.toLocation(player.getWorld()).getBlock().isEmpty())
+					if (checkVector.distance(entityVector) > distance)
 						break;
 					
 					distance = checkVector.distance(entityVector);
