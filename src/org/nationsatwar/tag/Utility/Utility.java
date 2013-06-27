@@ -102,7 +102,8 @@ public class Utility {
 					// Otherwise, increment the vector and break if distance increases
 					checkVector.add(direction);
 					
-					if (checkVector.distance(entityVector) > distance)
+					if (checkVector.distance(entityVector) > distance || 
+							!checkVector.toLocation(player.getWorld()).getBlock().isEmpty())
 						break;
 					
 					distance = checkVector.distance(entityVector);
@@ -131,7 +132,8 @@ public class Utility {
 					checkVector.add(direction);
 					attackHitbox.d(direction.getX(), direction.getY(), direction.getZ());
 					
-					if (checkVector.distance(entityVector) > distance)
+					if (checkVector.distance(entityVector) > distance || 
+							!checkVector.toLocation(player.getWorld()).getBlock().isEmpty())
 						break;
 					
 					distance = checkVector.distance(entityVector);
@@ -168,11 +170,7 @@ public class Utility {
 				}
 			}
 			
-			Tag.log("Woah man");
-			
 			if (closestEntity != null) {
-				
-				Tag.log("Worked");
 				
 				closestEntities.add(closestEntity);
 				entityList.remove(closestEntity);
