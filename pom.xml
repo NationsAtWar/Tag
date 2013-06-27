@@ -8,11 +8,6 @@
 		<id>bukkit-repo</id>
 		<url>http://repo.bukkit.org/content/groups/public/</url>
 	</repository>
-	<repository>
-		<id>project-common</id>
-		<name>Project Common</name>
-		<url>http://almiteycow.homeip.net:8089/job/ToyChest/ws/</url>
-	</repository>
   </repositories>
   <dependencies>
 	<dependency>
@@ -31,7 +26,7 @@
 		<version>1.5</version>
 	</dependency>
 	<dependency>
-      <groupId>resources</groupId>
+      <groupId>${basedir}/var/lib/jenkins/workspace</groupId>
       <artifactId>ToyChest</artifactId>
       <version>1.0</version>
     </dependency>
