@@ -3,11 +3,13 @@ package org.nationsatwar.tag;
 import java.util.logging.Logger;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.nationsatwar.tag.Events.PolearmEvents;
+import org.nationsatwar.tag.Events.TwoHandedEvents;
 
 /**
- * The iSpy parent class.
+ * The Tag parent class.
  * <p>
- * Custom scripting plugin for Minecraft
+ * Custom combat functionality plugin for Minecraft
  * 
  * @author Aculem
  */
@@ -19,6 +21,10 @@ public final class Tag extends JavaPlugin {
 	 * Initializes the plugin on server startup.
 	 */
 	public void onEnable() {
+		
+    	// Register Events
+		getServer().getPluginManager().registerEvents(new PolearmEvents(this), this);
+		getServer().getPluginManager().registerEvents(new TwoHandedEvents(this), this);
     	
     	log("Tag has been enabled.");
 	}

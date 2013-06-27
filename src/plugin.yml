@@ -1,13 +1,13 @@
-name: Kitty
-main: org.nationsatwar.kitty.Kitty
+name: Tag
+main: org.nationsatwar.tag.Tag
 version: 1.0
 
 commands:
-  kitty:
-    description: Displays all Kitty commands.
-    permission: iSpy.basic
+  tag:
+    description: Displays all Tag commands.
+    permission: tag.basic
     usage: /<command>
     
 permissions:
-  kitty.*:
-    description: Gives access to all Kitty commands
+  tag.*:
+    description: Gives access to all Tag commands
