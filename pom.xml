@@ -31,7 +31,7 @@
 		<version>1.5</version>
 	</dependency>
 	<dependency>
-      <groupId>http://almiteycow.homeip.net:8089/job/ToyChest/ws/</groupId>
+      <groupId>resources</groupId>
       <artifactId>ToyChest</artifactId>
       <version>1.0</version>
     </dependency>
