@@ -10,7 +10,7 @@
 	</repository>
 	 <repository>
 	  <id>nations-repo</id>
-	  <url>http://www.github.com/NationsAtWar</url>
+	  <url>https://raw.github.com/NationsAtWar/ToyChest/</url>
 	 </repository>
   </repositories>
   <dependencies>
