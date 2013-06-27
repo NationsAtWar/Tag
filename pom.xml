@@ -26,7 +26,7 @@
 		<version>1.5</version>
 	</dependency>
 	<dependency>
-      <groupId>${basedir}/var/lib/jenkins/workspace</groupId>
+      <groupId>ToyChest</groupId>
       <artifactId>ToyChest</artifactId>
       <version>1.0</version>
     </dependency>
