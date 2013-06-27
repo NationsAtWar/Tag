@@ -30,7 +30,7 @@
 		<version>1.5</version>
 	</dependency>
 	<dependency>
-      <groupId>com.github/NationsAtWar</groupId>
+      <groupId>com.github.NationsAtWar</groupId>
       <artifactId>ToyChest</artifactId>
       <version>1.0</version>
     </dependency>
