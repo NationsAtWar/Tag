@@ -1,8 +1,11 @@
 package org.nationsatwar.tag;
 
+import java.io.File;
+import java.net.MalformedURLException;
 import java.util.logging.Logger;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.PluginClassLoader;
 import org.nationsatwar.tag.Events.AttackEvents;
 
 /**
@@ -20,6 +23,13 @@ public final class Tag extends JavaPlugin {
 	 * Initializes the plugin on server startup.
 	 */
 	public void onEnable() {
+		
+		try {
+			((PluginClassLoader) this.getClassLoader()).addURL(new File("plugins/ToyChest.jar").toURI().toURL());
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
     	// Register Events
 		getServer().getPluginManager().registerEvents(new AttackEvents(this), this);
