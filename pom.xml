@@ -8,6 +8,10 @@
 		<id>bukkit-repo</id>
 		<url>http://repo.bukkit.org/content/groups/public/</url>
 	</repository>
+	<repository>
+		<id>nations-repo</id>
+		<url>https://github.com/NationsAtWar</url>
+	</repository>
   </repositories>
   <dependencies>
 	<dependency>
