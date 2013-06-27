@@ -1,0 +1,14 @@
+name: Tag
+version: 1.0
+main: org.nationsatwar.tag.Tag
+softdepend: [ToyChest]
+
+commands:
+  tag:
+    description: Displays all Tag commands.
+    permission: tag.basic
+    usage: /<command>
+    
+permissions:
+  tag.*:
+    description: Gives access to all Tag commands
