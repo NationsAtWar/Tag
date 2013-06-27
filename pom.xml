@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>Tag</groupId>
   <artifactId>Tag</artifactId>
@@ -8,10 +8,6 @@
 		<id>bukkit-repo</id>
 		<url>http://repo.bukkit.org/content/groups/public/</url>
 	</repository>
-	 <repository>
-	  <id>nations-repo</id>
-	  <url>https://raw.github.com/NationsAtWar/ToyChest/</url>
-	 </repository>
   </repositories>
   <dependencies>
 	<dependency>
@@ -40,7 +36,7 @@
       <resource>
         <targetPath>.</targetPath>
         <filtering>false</filtering>
-        <directory>${basedir}/resources/</directory>
+        <directory>${basedir}/resources</directory>
       </resource>
     </resources>
     <sourceDirectory>src</sourceDirectory>
@@ -53,27 +49,6 @@
           <target/>
         </configuration>
       </plugin>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>2.1</version>
-        <executions>
-          <execution>
-            <phase>ToyChest</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <artifactSet>
-              </artifactSet>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
     </plugins>
   </build>
 </project>
