@@ -26,7 +26,7 @@ public final class Tag extends JavaPlugin {
     	
     	log("Tag has been enabled.");
 	}
-
+	
 	/**
 	 * Handles the plugin on server stop.
 	 */
@@ -34,7 +34,7 @@ public final class Tag extends JavaPlugin {
 		
 		log("Tag has been disabled.");
 	}
-
+	
 	/**
 	 * Plugin logger handler. Useful for debugging.
 	 * 
